@@ -28,7 +28,7 @@ public class Employee {
 
     public void addEmployee(Employee employee) {
         children.add(employee);
-        employee.parentId = this.id;
+        employee.parentId = getId();
     }
 
     public void printChildren() {
@@ -48,9 +48,6 @@ public class Employee {
             }
         }
     }
-
-
-
 
     @Override
     public String toString() {
